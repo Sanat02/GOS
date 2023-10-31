@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pages / Login - NiceAdmin Bootstrap Template</title>
+  <title>Pages / Register - NiceAdmin Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -29,7 +29,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
- 
+  
 </head>
 
 <body>
@@ -54,20 +54,24 @@
                 <div class="card-body">
 
                   <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4">Кирүү</h5>
-                    <p class="text-center small">Кириш үчүн сыр сөз менен email дарегиңизди киргизиңиз</p>
+                    <h5 class="card-title text-center pb-0 fs-4">Катталуу</h5>
+                    <p class="text-center small">Жеке маалымат киргизиңиз</p>
                   </div>
 
                   <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-12">
+                      <label for="yourName" class="form-label">Аты-жөнүңүз</label>
+                      <input type="text" name="name" class="form-control" id="yourName" required>
+                      <div class="invalid-feedback">Аты-жөнүңүздү жазыңыз</div>
+                    </div>
 
                     <div class="col-12">
-                      <label for="yourUsername" class="form-label">Email</label>
-                      <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" name="username" class="form-control" id="yourUsername" required>
-                        <div class="invalid-feedback">Email дарегиңизди жазыңыз!</div>
-                      </div>
+                      <label for="yourEmail" class="form-label"> Email</label>
+                      <input type="email" name="email" class="form-control" id="yourEmail" required>
+                      <div class="invalid-feedback">Email дарегиңизди жазыңыз!</div>
                     </div>
+
+                   
 
                     <div class="col-12">
                       <label for="yourPassword" class="form-label">Сыр сөз</label>
@@ -75,20 +79,19 @@
                       <div class="invalid-feedback">Сыр сөз жазыңыз!</div>
                     </div>
 
+                    
                     <div class="col-12">
+                      <button class="btn btn-primary w-100" type="submit">Катталуу</button>
                     </div>
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Кирүү</button>
-                    </div>
-                    <div class="col-12">
-                      <p class="small mb-0">Аккаунтуңуз жокпу? <a href="pages-register.html">Катталуу</a></p>
+                      <p class="small mb-0">Аккаунтуңуз барбы? <a href="pages-login.ftlh">Кирүү</a></p>
                     </div>
                   </form>
 
                 </div>
               </div>
 
-              
+             
 
             </div>
           </div>

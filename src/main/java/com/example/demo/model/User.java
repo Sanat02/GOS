@@ -22,7 +22,7 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  int id;
-    private String accountName;
+    private String fio;
     private String email;
     private String password;
     private String phoneNumber;
