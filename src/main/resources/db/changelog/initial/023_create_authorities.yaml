@@ -1,7 +1,7 @@
 databaseChangeLog:
   - changeSet:
       id: create authorities
-      author: admin
+      author: Sanat
       changes:
         - createTable:
             tableName: authorities
