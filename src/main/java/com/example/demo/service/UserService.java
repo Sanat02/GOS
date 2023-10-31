@@ -2,7 +2,7 @@ package com.example.demo.service;
 
 
 import com.example.demo.dto.UserDto;
-import com.example.demo.model.Role;
+
 import com.example.demo.model.User;
 import com.example.demo.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -15,27 +15,27 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-@Slf4j
+//@Slf4j
 public class UserService {
     private final UserRepository userRepository;
     private final PasswordEncoder encoder;
     private final RoleService roleService;
 
     public Optional<User> getUserByEmail(String email) {
-        log.info("Gol user by email:" + email);
+//        log.info("Gol user by email:" + email);
         Optional<User> mayBeUser = userRepository.findUserByEmail(email);
         return mayBeUser;
     }
 
 
     public Optional<User> getUserById(int id) {
-        log.info("Got user by id:" + id);
+//        log.info("Got user by id:" + id);
         return userRepository.findById(id);
     }
 
 
     public int save(UserDto userDto) {
-        log.info("The user:" + userDto.getEmail() + " is saved!");
+//        log.info("The user:" + userDto.getEmail() + " is saved!");
         return userRepository.save(User.builder()
                 .fio(userDto.getFio())
                 .email(userDto.getEmail())
